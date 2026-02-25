@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Logic</title>
+</head>
+<body>
+    <script>
+        // 1️⃣ Even or Odd
+        // 👉 Take a number and check if it is even or odd.
+
+        // let n = Number(prompt("enter number"));
+        // if(n%2 == 0 ){
+        //     document.write("even");
+        // }else{
+        //     document.write("odd");
+        // }
+
+        // 2️⃣ Positive, Negative or Zero
+        // 👉 Check number type.
+
+        // let n = Number(prompt("enter number"));
+        // if(n<0){
+        //     document.write("negative number");
+        // }else if(n>0){
+        //     document.write("positve number");
+        // }else{
+        //     document.write("Zero");
+        // }
+    
+        // if user eneter "abc"
+        // if(isNaN(n)){
+        //     document.write("enetr valid number")
+        // }else if(n<0){
+        //     document.write("negative number");
+        // }else if(n>0){
+        //     document.write("positve number");
+        // }else{
+        //     document.write("Zero");
+        // }
+
+        // 3️⃣ Largest of 3 numbers
+        // 👉 Compare using if-else.
+        /*
+        let a = 66;
+        let b = 54;
+        let c = 89;
+
+        if(a>b && a>c){
+            document.write(a," is larger number");
+        }
+        else if(b>a && b>c){
+            document.write(b," is larger number");
+        }
+        else{
+            document.write( c," is larger number");
+        }
+        */
+
+        // 4️⃣ Reverse a Number
+        /*
+        function reverseNum(num){
+            let orignal = num;
+            let reverse = 0;
+
+            while(num > 0){
+                let digit = num % 10; // That gives last digit.
+                num = Math.floor(num / 10); // Remove last digit
+                reverse = reverse * 10 + digit; // Add it to reverse
+            }
+            return reverse;
+        }
+        console.log(reverseNum(4567));
+        */
+
+        // 5️⃣ Count Digits in a Number
+        // Example:
+        // 12345 → 5 digits
+
+        let num = 45678;
+        // let num = 0;
+        let count = 0;
+
+        while(num > 0){
+            let digit = num % 10;
+            num = Math.floor(num/10);
+            count++;
+        }
+        console.log(count, "digit");
+
+
+        
+    </script>
+</body>
+</html>
