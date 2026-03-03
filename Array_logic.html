@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Logic</title>
+</head>
+<body>
+    <script>
+        // 1️⃣5️⃣ Find Maximum Number in Array
+        let numb = [20, 50, 73,45,89];
+        let largnumb = numb[0];
+        for (let i=0; i<numb.length; i++){
+            if(numb[i] > largnumb){
+                largnumb = numb[i];
+            }
+        }
+        console.log(largnumb);
+
+        // 1️⃣6️⃣ Remove Duplicates from Array
+        let name = ["Pavan","Divyesh","Nitin","Pavan","Jayraj"];
+        let unique = [];
+        for(let i=0; i<name.length; i++){
+            if(!unique.includes(name[i])){
+                unique.push(name[i]);
+            }
+        }
+        document.write(unique);
+
+
+    </script>
+</body>
+</html>
